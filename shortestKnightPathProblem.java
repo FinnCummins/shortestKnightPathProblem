@@ -32,28 +32,6 @@ class Graph {
 		adjacencyList.get(source).add(new Pair(destination, weight));
 	}
 	
-	/*void printBFS(int startingNode)
-	{
-		Queue<Integer> queue = new LinkedList<>();
-		Set<Integer> alreadyVisited = new HashSet<>();
-		queue.add(startingNode);
-		System.out.print("BFS Spanning Tree: ");
-		while (!queue.isEmpty())
-		{
-			int currentNode = queue.poll();
-			alreadyVisited.add(currentNode);
-			for (int i = 0; i < this.adjacencyList.get(currentNode).size(); i++)
-			{
-				if (!alreadyVisited.contains(this.adjacencyList.get(currentNode).get(i).index))
-					queue.add(this.adjacencyList.get(currentNode).get(i).index);
-			}
-			if (!queue.isEmpty())
-				System.out.print(currentNode + " -> ");
-			else
-				System.out.print(currentNode);
-		}
-	}*/
-	
 	String convertNumToSquare(int num)
 	{
 		String square = "";
